@@ -65,7 +65,6 @@ def tokenize(texts):
 
     ## convert bytes to string format 
     normalised_text = re.sub(r'[^a-zA-Z0-9]'," ",str(texts).lower())
-    #dataframe['column_name'] = dataframe['column_name'].fillna('').apply(str)
     
     tokens = word_tokenize(normalised_text)
     tokens = [token for token in tokens if token not in stopwords.words("english")]
@@ -101,7 +100,7 @@ class VerbCounter(BaseEstimator,TransformerMixin):
         return pd.DataFrame(verb_count)
 
 
-def build_model(clf=AdaBoostClassifier(learning_rate=0.5)):
+def build_model(clf=RandomForestClassifier()):
     '''
     Load the transformers and classifier model into a pipeline
 
