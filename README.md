@@ -5,9 +5,9 @@ In the midst of a disaster events, time is of essence when it comes to providing
 
 In this project, a disaster pipeline classifer is created to classify the disaster related messages into 36 different categories in order to pinpoint what kind of aid is needed for the respective senders. Here, natural language processing technique will be used to tokenize the text messages and feature-engineered in order to be trained in a classifer on top of the categorical label data. One thing to note is each message can be assigned into multiple categories based on the nature of the message. ETL and ML pipelines are created as well to perform data preprocessing on the raw data and model training and tuning separately. Lastly, the trained model will be serialised as pickle file and then deployed to web app using Flask for live prediction.
 
-![](https://github.com/deeplyneuralicious/Disaster-Response-Classifier/blob/main/Screenshots/Web App Chart.png)
+![](https://github.com/deeplyneuralicious/Disaster-Response-Classifier/blob/main/Screenshots/WebAppChart.png)
 
-![](https://github.com/deeplyneuralicious/Disaster-Response-Classifier/blob/main/Screenshots/Web App Message Classifier.png)
+![](https://github.com/deeplyneuralicious/Disaster-Response-Classifier/blob/main/Screenshots/WebAppMessageClassifier.png)
 
 ### Instructions for Running the Files:
 1. Run the following commands in the project's root directory to set up your database and model.
